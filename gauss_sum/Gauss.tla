@@ -3,7 +3,7 @@ EXTENDS Integers, TLAPS
 
 CONSTANT N
 ASSUME NType == /\ N \in Nat
-                /\ N > 2
+                /\ N > 0
 
 (****************************************************************************
 --fair algorithm Sum
@@ -114,5 +114,5 @@ THEOREM  SafetySpec => [] Correctness
     <1> QED BY <1>1, <1>2, <1>3, PTL DEF SafetySpec   
 =============================================================================
 \* Modification History
-\* Last modified Tue Mar 11 09:00:15 CET 2025 by appeltwi
+\* Last modified Tue Mar 11 09:12:41 CET 2025 by appeltwi
 \* Created Mon Mar 10 17:12:40 CET 2025 by appeltwi
